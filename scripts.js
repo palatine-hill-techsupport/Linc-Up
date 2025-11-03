@@ -85,18 +85,21 @@
   });
 })();
 
-// Fade control buttons: brighten on hover/tap for 3s
-document.querySelectorAll('.round').forEach(btn => {
-  btn.addEventListener('mouseenter', () => {
-    btn.classList.add('active');
-  });
+// Fade control buttons: brighten all on hover/tap for 3s
+(function() {
+  const buttons = document.querySelectorAll('.round');
 
-  btn.addEventListener('mouseleave', () => {
-    setTimeout(() => btn.classList.remove('active'), 3000);
-  });
+  const activateAll = () => {
+    buttons.forEach(btn => btn.classList.add('active'));
+    clearTimeout(window.roundFadeTimer);
+    window.roundFadeTimer = setTimeout(() => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+    }, 3000);
+  };
 
-  btn.addEventListener('click', () => {
-    btn.classList.add('active');
-    setTimeout(() => btn.classList.remove('active'), 3000);
+  buttons.forEach(btn => {
+    btn.addEventListener('mouseenter', activateAll);
+    btn.addEventListener('click', activateAll);
   });
-});
+})();
+
