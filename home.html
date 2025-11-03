@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LincUp | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="home">
+  <div id="frame" class="frame">
+    <div class="bg"></div>
+
+    <!-- Right-column hamburger -->
+    <button class="chev" id="chevNext" aria-label="Show menu">
+      <img src="/images/right_chev.svg" alt="">
+    </button>
+    <button class="chev" id="chevBack" aria-label="Back to home">
+      <img src="/images/left_chev.svg" alt="">
+    </button>
+
+    <div class="track">
+      <!-- LEFT COLUMN -->
+      <section class="left home">
+        <a href="home.html" class="brand" aria-label="LincUp logo"></a>
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="right home">
+        <button class="menu" aria-label="Open menu">
+          <img src="/images/burger.svg" alt="">
+        </button>
+
+        <div class="home-copy">
+            <img src="/images/lincup_logo_mu.png" class="brand_mini" alt="">
+            <h1>Welcome to LincUp</h1>
+            <p>
+                A more human way to connect talent with opportunity.  
+                Try the interactive demos below and see how employers and applicants experience the process.
+            </p>
+        </div>
+
+        <div class="home-buttons">
+          <a href="employer.html" class="home-btn employer">Employer Demo</a>
+          <a href="applicant.html" class="home-btn applicant">Applicant Demo</a>
+        </div>
+
+        <!-- Menu overlay -->
+        <div id="menuOverlay" class="menu-overlay" hidden>
+          <button class="close-menu" aria-label="Close menu">&times;</button>
+          <nav class="menu-links">
+            <a href="home.html">Home</a>
+            <a href="employer.html">Employer Demo</a>
+            <a href="applicant.html">Applicant Demo</a>
+            <a href="#">Account</a>
+            <a href="#">Settings</a>
+            <a href="#">Support</a>
+          </nav>
+        </div>
+      </aside>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

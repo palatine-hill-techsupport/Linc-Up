@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Linc-Up | Applicant</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="applicant">
+<main class="frame" id="frame">
+  <div class="bg"></div>
+
+  <!-- Mobile chevrons -->
+  <button class="chev" id="chevNext" aria-label="Go to profile">
+    <img src="/images/info_chat.svg" alt=""><img src="/images/right_chev.svg" alt="">
+  </button>
+  <button class="chev" id="chevBack" aria-label="Back to video">
+    <img src="/images/video_chat.svg" alt=""><img src="/images/left_chev.svg" alt="">
+  </button>
+
+  <div class="track" id="track">
+    <!-- LEFT COLUMN -->
+    <section class="left">
+      <a href="home.html" class="brand" aria-label="LincUp logo"></a>
+      <div class="video"><img src="/images/videocam.svg" alt=""></div>
+      <div class="feed-controls">
+        <button class="round" aria-label="Mute video"><img src="/images/mute.svg" alt=""></button>
+        <button class="round" aria-label="Mute microphone"><img src="/images/mic_off.svg" alt=""></button>
+        <button class="round" aria-label="More options"><img src="/images/more_horiz.svg" alt=""></button>
+      </div>
+
+      <!-- Mobile-only CTA buttons -->
+      <div class="mobile-ctas">
+        <button class="cta connect">Connect <img src="/images/check.svg" alt=""></button>
+        <button class="cta pass">Pass <img src="/images/close.svg" alt=""></button>
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="right">
+      <article class="card">
+        <button class="menu" aria-label="Menu"><img src="/images/burger.svg" alt=""></button>
+
+        <div class="avatar2"></div>
+          <div>
+            <div class="name">JB HI-FI</div>
+            <div class="title">Assocaite UX Designer</div>
+            <div class="loc">Southbank, Melbourne, VIC</div>
+          </div>
+
+            <p class="bio">
+              JB Hi-Fi is looking for a Junior Experience Designer to help shape intuitive, engaging tools and digital experiences used by both customers and team members. The role is about turning insight into impact—helping define, design and deliver solutions that make every interaction smoother, smarter, and more human.
+              <br><br>
+              You’ll work closely with senior designers, developers and product owners to explore ideas, build prototypes, and refine real-world products in a fast-paced environment that values collaboration and curiosity.
+              <br><br>
+            </p>
+
+            <strong class="bio-heading">What you’ll bring:</strong>
+            <ul class="bio-list">
+              <li>Solid grasp of user-centred design principles and wireframing.</li>
+              <li>Comfort using tools like Figma, Adobe XD, or similar.</li>
+              <li>Basic understanding of front-end concepts (HTML, CSS, JS).</li>
+              <li>Ability to communicate ideas clearly and work in cross-functional teams.</li>
+              <li>A passion for improving everyday experiences through design.</li>
+            </ul>
+
+            <p class="bio">
+              It’s a role for a curious designer who’s ready to learn, experiment, and grow…
+            </p>
+          
+        <div class="skills">
+          <span class="chip">Office 365</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Photoshop</span>
+          <span class="chip">Illustrator</span>
+          <span class="chip">Premiere</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Python</span>
+        </div>
+      </article>
+
+      <!-- Slide-in Menu Overlay -->
+      <div class="menu-overlay" id="menuOverlay" hidden>
+        <button class="close-menu" aria-label="Close menu">×</button>
+        <nav class="menu-links">
+          <a href="home.html">Home</a>
+          <a href="employer.html">Employer Demo</a>
+          <a href="applicant.html">Applicant Demo</a>
+          <a href="#">Applications</a>
+          <a href="#">Account</a>
+          <a href="#">Settings</a>
+          <a href="#">Support</a>
+        </nav>
+      </div>
+
+      <div class="actions">
+        <div class="score">
+          <span class="score-value">99%</span>
+          <span class="score-text">
+            🎉 JB HI-FI is a near perfect match - <a href="#" id="why-link">read why</a>
+          </span>
+        </div>
+        <button class="cta pass">Pass <img src="/images/close.svg" alt=""></button>
+      </div>
+    </aside>
+  </div>
+
+<!-- Why Match Modal -->
+<div class="modal" id="why-modal" hidden>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="why-title">
+    <button class="modal-close" aria-label="Close">×</button>
+    <h3 id="why-title">Why this is a strong match</h3>
+    <ul class="why-points">
+      <li>Skills match: UX, JS, Figma, Adobe Suite.</li>
+      <li>Location proximity: Melbourne (onsite/remote flexible).</li>
+      <li>Availability and seniority align with role scope.</li>
+      <li>Portfolio signals: shipped prototypes, hiring tools experience.</li>
+    </ul>
+  </div>
+</div>
+
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
