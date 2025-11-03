@@ -12,7 +12,7 @@
 html,body{height:100%;font-family:Inter,system-ui,sans-serif;color:var(--ink);overflow:hidden}
 
 .frame{position:relative;height:100vh;width:100%;overflow:hidden}
-.bg{position:absolute;inset:0;background:url('/images/SYD.jpg') center/cover no-repeat;opacity:.3;z-index:0}
+.bg{position:absolute;inset:0;background:url('images/SYD.jpg') center/cover no-repeat;opacity:.3;z-index:0}
 
 /* Track holds both columns so we can slide on mobile, jesus this took awhile */
 .track{
@@ -27,7 +27,7 @@ html,body{height:100%;font-family:Inter,system-ui,sans-serif;color:var(--ink);ov
   position:relative;
 }
 .brand{
-  width:150px;height:80px;background:url('/images/lincup_logo.png') no-repeat left/contain;
+  width:150px;height:80px;background:url('images/lincup_logo.png') no-repeat left/contain;
   transition:transform .2s ease;
 }
 .brand:hover{transform:scale(1.05)}
@@ -87,12 +87,12 @@ html,body{height:100%;font-family:Inter,system-ui,sans-serif;color:var(--ink);ov
 
 .avatar{
   width:200px;height:200px;border-radius:50%;
-  background:url('/images/display_pic.jpg') center/cover no-repeat;
+  background:url('images/display_pic.jpg') center/cover no-repeat;
   margin:0 auto;
 }
 .avatar2{
   width:200px;height:200px;border-radius:50%;
-  background:url('/images/jb.png') center/cover no-repeat;
+  background:url('images/jb.png') center/cover no-repeat;
   margin:0 auto;
 }
 .name{font-weight:800;font-size:1.4rem;color:var(--slate)}
@@ -254,7 +254,7 @@ html,body{height:100%;font-family:Inter,system-ui,sans-serif;color:var(--ink);ov
 .left.home .brand {
   width: 700px;
   height: 380px;
-  background: url('/images/lincup_logo.png') center/contain no-repeat;
+  background: url('images/lincup_logo.png') center/contain no-repeat;
   transform: none;
   transition: transform 0.3s ease;
   }
